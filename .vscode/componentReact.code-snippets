@@ -1,0 +1,16 @@
+{
+	
+	 "criacao de componente react": {
+	 	"scope": "javascript,typescript",
+	 	"prefix": "rccop",
+	 	"body": [
+	 		"import React from 'react'",
+
+			"const App = () => {",
+			"  return <div>App</div>",
+			"};",
+			"export default App;"
+	 	],
+	 	"description": "criacao de componente react"
+	 }
+}
