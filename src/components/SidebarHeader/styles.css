@@ -13,6 +13,7 @@
     height: 35px;
     cursor: pointer;
     border-radius: 50%;
+    cursor: pointer;
 }
 .Container-sidebarheader-imagens {
     display: flex;

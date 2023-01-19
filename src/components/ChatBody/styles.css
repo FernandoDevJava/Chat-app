@@ -1,0 +1,22 @@
+.Container-ChatBody {
+    flex: 1;
+    background-color: #efeae2;
+    background-image: url("./assets/mobato_logo2.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -16,11 +16,11 @@ const SidebarChats = ({ setUserChat, userChat }) => {
 
   return (
     <div className="Container-sidebarchats">     
-     {chatsSnapshot?.docs.map((item, index) => (        
+     {chatsSnapshot?.docs.map((item, index) => (    
         <div key={index}>
           <SidebarChatsItem
             id={item.id}
-            users={item.data().user}
+            users={item.data().users}
             user={user}
             setUserChat={setUserChat}
             active={userChat?.chatId === item.id ? "active" : ""}

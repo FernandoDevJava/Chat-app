@@ -1,6 +1,6 @@
 .Container-sidebarchats {
     height: calc(100vh - 70px);
-    overflow-y: auto;
+    overflow-y: auto;    
 }
 
 -webkit-scrollbar {

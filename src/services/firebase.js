@@ -3,12 +3,12 @@ import "firebase/compat/auth"
 import "firebase/compat/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBJLzt_9eY8gRKsE6_kcsnCfhtnST4hLnE",
-    authDomain: "aplicativo-chat634.firebaseapp.com",
-    projectId: "aplicativo-chat634",
-    storageBucket: "aplicativo-chat634.appspot.com",
-    messagingSenderId: "33720415286",
-    appId: "1:33720415286:web:2f6479fed9a48ae6399497"
+    apiKey: process.env.REACT_APP_APIKEY ,
+    authDomain: `${process.env.REACT_APP_AUTHDOMAIN}`,
+    projectId: `${process.env.REACT_APP_PROJETCTID}`,
+    storageBucket: `${process.env.REACT_APP_STORAGEBUCKET}`,
+    messagingSenderId: `${process.env.REACT_APP_MESSAGINGSENDERID}`,
+    appId: `${process.env.REACT_APP_APPID}`
   };
 
   const app = firebase.initializeApp(firebaseConfig);

@@ -1,29 +1,33 @@
-#Container-sidebarchatitem {
+.into{
     display: flex;
-    align-items: center;
     justify-content: start;
+    align-items: center;
     padding: 15px 20px;
     cursor: pointer;
 }
-#Container-sidebarchatitem:hover {
-    background-color: #f0f2f5;
+.into:hover {
+    background-color: #6ccfb1;
 }
-#Container-sidebarchatitem img {
+.active {
+    display: flex;
+    cursor: pointer;
+    background-color: #6ccfb1;
+    cursor: pointer;
+}
+.active svg {
     width: 30px;
     height: 30px;
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 100%;
     min-width: fit-content;
 }
-.active {
-    background-color: #f0f2f5;
-}
+
 .Name {
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-Avatar img {
+Avatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;

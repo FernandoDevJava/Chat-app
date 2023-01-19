@@ -3,8 +3,16 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-
+.Container img {
+    width: 150px;
+    text-align: center;
+}
+h1 {
+    font-size: 28px;
+    padding: 15px;
+}
 .button-login button {
     outline: none;
     font-size: 1vw;

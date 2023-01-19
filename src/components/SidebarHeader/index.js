@@ -9,31 +9,32 @@ import './styles.css'
 const SidebarHeader = ({ setUserChat }) => {
     const [user] = useAuthState(auth);
     const refChat = db
-        .collection("chats")
-        .where("users", "array-contains", user.email);
+      .collection("chats")
+      .where("users", "array-contains", user.email);
     const [chatsSnapshot] = useCollection(refChat);
-
+  
     const handleCreateChat = () => {
-        const emailInput = prompt("Escreva o e-mail desejado");
-
-        if (!emailInput) return;
-
-        if (!EmailValidator.validate(emailInput)) {
-            return alert("E-mail Inválido");
-        } else if (emailInput === user.email) {
-            return alert("Insira um e-mail diferente do seu!");
-        } else if (chatExists(emailInput)) {
-            return alert("chat já existe!");
-        }
-        db.collection("chats").add({
-            users: [user.email, emailInput],
-        });
+      const emailInput = prompt("Escreva o e-mail desejado");
+  
+      if (!emailInput) return;
+  
+      if (!EmailValidator.validate(emailInput)) {
+        return alert("E-mail inválido!");
+      } else if (emailInput === user.email) {
+        return alert("Insira um e-mail diferente do seu!");
+      } else if (chatExists(emailInput)) {
+        return alert("Chat já existe!");
+      }
+  
+      db.collection("chats").add({
+        users: [user.email, emailInput],
+      });
     };
-
+  
     const chatExists = (emailChat) => {
-        return !!chatsSnapshot?.docs.find(
-            (chat) => chat.data().users.find((user) === emailChat)?.length > 0
-        );
+      return !!chatsSnapshot?.docs.find(
+        (chat) => chat.data().users.find((user) => user === emailChat)?.length > 0
+      );
     };
 
 
