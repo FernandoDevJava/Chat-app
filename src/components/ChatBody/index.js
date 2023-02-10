@@ -3,7 +3,7 @@ import { db } from "../../services/firebase"
 import { useCollection } from "react-firebase-hooks/firestore"
 import Message from "../Message";
 import './styles.css'
-import MobatoLogo from "./assets/mobato_logo2.png"
+
 
 const ChatBody = ({ chatId }) => {
   const [messagesRes] = useCollection(
