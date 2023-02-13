@@ -1,6 +1,6 @@
 import React from "react";
 import { auth, provider } from "../../services/firebase"
-import LogoMobato from './assets/mobato_logo2.png'
+import MachadoLogo from './assets/Machado-logo.png'
 import './styles.css'
 
 const Login = () => {
@@ -10,7 +10,7 @@ const Login = () => {
     return (
         <div className="Container">
             <div className="button-login">
-                <img src={LogoMobato} alt="" />
+                <img src={MachadoLogo} alt="" />
                 <h1>Chat Mobato</h1>
                 <button onClick={handleSignin}>Login com Google</button>
             </div>
