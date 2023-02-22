@@ -1,4 +1,4 @@
-nimport React from "react";
+import React from "react";
 import { auth, provider } from "../../services/firebase"
 import MachadoLogo from './assets/Machado-logo.png'
 import './styles.css'
